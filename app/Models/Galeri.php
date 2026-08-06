@@ -1,0 +1,27 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Galeri extends Model
+{
+    use HasFactory;
+
+    protected $table = 'galeris';
+    protected $primaryKey = 'id_galeri';
+
+    protected $fillable = [
+        'id_admin',
+        'judul',
+        'gambar',
+        'keterangan',
+    ];
+
+    // Relasi balik ke Admin (BelongsTo)
+    public function admin()
+    {
+        return $this->belongsTo(Admin::class, 'id_admin', 'id_admin');
+    }
+}
