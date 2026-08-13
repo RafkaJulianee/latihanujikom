@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" fill="none">
+  <defs>
+    <linearGradient id="galEcomBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E1B4B"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" rx="16" fill="url(#galEcomBg)"/>
+  <rect x="140" y="60" width="320" height="230" rx="16" fill="#1E293B" stroke="#8B5CF6" stroke-width="1.5"/>
+  <!-- Products Row -->
+  <rect x="165" y="85" width="80" height="110" rx="10" fill="#0F172A"/>
+  <circle cx="205" cy="120" r="22" fill="#EC4899"/>
+  <rect x="175" y="155" width="60" height="8" rx="4" fill="#E2E8F0"/>
+  <rect x="175" y="170" width="40" height="8" rx="4" fill="#8B5CF6"/>
+
+  <rect x="260" y="85" width="80" height="110" rx="10" fill="#0F172A"/>
+  <circle cx="300" cy="120" r="22" fill="#3B82F6"/>
+  <rect x="270" y="155" width="60" height="8" rx="4" fill="#E2E8F0"/>
+  <rect x="270" y="170" width="40" height="8" rx="4" fill="#8B5CF6"/>
+
+  <rect x="355" y="85" width="80" height="110" rx="10" fill="#0F172A"/>
+  <circle cx="395" cy="120" r="22" fill="#10B981"/>
+  <rect x="365" y="155" width="60" height="8" rx="4" fill="#E2E8F0"/>
+  <rect x="365" y="170" width="40" height="8" rx="4" fill="#8B5CF6"/>
+
+  <!-- Cart Bar -->
+  <rect x="165" y="215" width="270" height="45" rx="10" fill="#8B5CF6"/>
+  <text x="300" y="244" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="14" fill="#FFFFFF">Proceed to Checkout (3)</text>
+  <text x="300" y="345" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="18" fill="#94A3B8">Next-Gen E-Commerce Platform</text>
+</svg>

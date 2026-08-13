@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" fill="none">
+  <defs>
+    <linearGradient id="artBrandBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="artBrandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" rx="16" fill="url(#artBrandBg)"/>
+  <circle cx="300" cy="180" r="100" stroke="#3B82F6" stroke-width="2" stroke-dasharray="6 6"/>
+  <rect x="220" y="100" width="160" height="160" rx="30" fill="url(#artBrandGrad)"/>
+  <path d="M 260 140 L 340 140 L 280 200 L 340 200 L 340 220 L 260 220 L 320 160 L 260 160 Z" fill="#FFFFFF"/>
+  <text x="300" y="340" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="20" fill="#FFFFFF">Brand Identity &amp; Digital Presence</text>
+</svg>

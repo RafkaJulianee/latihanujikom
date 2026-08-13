@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="160" height="40" fill="none">
+  <!-- Modern Geometric Z Icon -->
+  <g transform="translate(10, 8)">
+    <path d="M 5 10 L 55 10 L 25 38 L 55 38 L 55 54 L 5 54 L 35 26 L 5 26 Z" fill="#2563EB"/>
+  </g>
+  <!-- ZICODE Text -->
+  <text x="80" y="48" font-family="'Outfit', 'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="34" fill="#0A1128" letter-spacing="2">ZICODE</text>
+</svg>

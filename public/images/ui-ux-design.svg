@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" fill="none">
+  <defs>
+    <linearGradient id="uiBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="uiBlueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="uiCyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+    <linearGradient id="uiPurpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#6366F1"/>
+    </linearGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="600" height="400" rx="16" fill="url(#uiBgGrad)"/>
+
+  <!-- Background Decorative Grid Lines & Circles -->
+  <g opacity="0.15">
+    <circle cx="100" cy="80" r="140" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <circle cx="500" cy="320" r="160" stroke="#8B5CF6" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <line x1="50" y1="0" x2="50" y2="400" stroke="#FFFFFF" stroke-width="0.5"/>
+    <line x1="550" y1="0" x2="550" y2="400" stroke="#FFFFFF" stroke-width="0.5"/>
+  </g>
+
+  <!-- Main Window (Design Canvas Mockup) -->
+  <g filter="url(#dropShadow)">
+    <rect x="110" y="55" width="380" height="270" rx="14" fill="#1E293B" stroke="#334155" stroke-width="1.5"/>
+    
+    <!-- Window Header -->
+    <path d="M 110 55 Q 110 55 110 55 L 490 55 Q 490 55 490 55 L 490 90 L 110 90 Z" fill="#0F172A" clip-path="url(#headerClip)"/>
+    <circle cx="132" cy="73" r="5" fill="#EF4444"/>
+    <circle cx="148" cy="73" r="5" fill="#F59E0B"/>
+    <circle cx="164" cy="73" r="5" fill="#10B981"/>
+    <rect x="230" y="66" width="140" height="14" rx="7" fill="#334155" opacity="0.6"/>
+
+    <!-- Left Sidebar Components -->
+    <rect x="125" y="105" width="65" height="205" rx="8" fill="#0F172A" opacity="0.8"/>
+    <rect x="135" y="118" width="45" height="8" rx="4" fill="#3B82F6"/>
+    <rect x="135" y="136" width="45" height="6" rx="3" fill="#475569"/>
+    <rect x="135" y="150" width="35" height="6" rx="3" fill="#475569"/>
+    <rect x="135" y="164" width="40" height="6" rx="3" fill="#475569"/>
+    <rect x="135" y="185" width="45" height="35" rx="6" fill="#1E293B" stroke="#3B82F6" stroke-width="1"/>
+
+    <!-- Canvas Area -->
+    <!-- Hero Banner Element -->
+    <rect x="205" y="105" width="270" height="75" rx="10" fill="url(#uiBlueGrad)"/>
+    <rect x="220" y="122" width="110" height="12" rx="6" fill="#FFFFFF"/>
+    <rect x="220" y="142" width="140" height="8" rx="4" fill="#DBEAFE" opacity="0.8"/>
+    <rect x="220" y="156" width="60" height="14" rx="7" fill="#FFFFFF"/>
+
+    <!-- Card 1 -->
+    <rect x="205" y="195" width="82" height="115" rx="8" fill="#0F172A"/>
+    <rect x="215" y="205" width="62" height="42" rx="6" fill="#334155"/>
+    <rect x="215" y="257" width="50" height="8" rx="4" fill="#94A3B8"/>
+    <rect x="215" y="271" width="35" height="6" rx="3" fill="#64748B"/>
+    <rect x="215" y="287" width="62" height="12" rx="6" fill="#3B82F6"/>
+
+    <!-- Card 2 -->
+    <rect x="299" y="195" width="82" height="115" rx="8" fill="#0F172A"/>
+    <rect x="309" y="205" width="62" height="42" rx="6" fill="url(#uiPurpleGrad)"/>
+    <rect x="309" y="257" width="50" height="8" rx="4" fill="#94A3B8"/>
+    <rect x="309" y="271" width="35" height="6" rx="3" fill="#64748B"/>
+    <rect x="309" y="287" width="62" height="12" rx="6" fill="#8B5CF6"/>
+
+    <!-- Card 3 -->
+    <rect x="393" y="195" width="82" height="115" rx="8" fill="#0F172A"/>
+    <rect x="403" y="205" width="62" height="42" rx="6" fill="url(#uiCyanGrad)"/>
+    <rect x="403" y="257" width="50" height="8" rx="4" fill="#94A3B8"/>
+    <rect x="403" y="271" width="35" height="6" rx="3" fill="#64748B"/>
+    <rect x="403" y="287" width="62" height="12" rx="6" fill="#06B6D4"/>
+  </g>
+
+  <!-- Floating UI Widget: Color Picker Badge -->
+  <g filter="url(#dropShadow)" transform="translate(60, 200)">
+    <rect width="90" height="100" rx="12" fill="#1E293B" stroke="#475569" stroke-width="1"/>
+    <circle cx="28" cy="28" r="12" fill="#3B82F6"/>
+    <circle cx="62" cy="28" r="12" fill="#8B5CF6"/>
+    <circle cx="28" cy="62" r="12" fill="#EC4899"/>
+    <circle cx="62" cy="62" r="12" fill="#10B981"/>
+    <rect x="20" y="82" width="50" height="6" rx="3" fill="#64748B"/>
+  </g>
+
+  <!-- Floating UI Widget: Pen Tool Cursor -->
+  <g filter="url(#dropShadow)" transform="translate(460, 120)">
+    <path d="M0 0 L15 35 L22 25 L35 30 L40 22 L27 18 L35 5 Z" fill="#3B82F6" stroke="#FFFFFF" stroke-width="2"/>
+    <circle cx="3" cy="3" r="3" fill="#FFFFFF"/>
+  </g>
+</svg>

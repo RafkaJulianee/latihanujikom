@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" fill="none">
+  <defs>
+    <linearGradient id="seoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#064E3B"/>
+    </linearGradient>
+    <linearGradient id="chartBarGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <filter id="seoShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="400" rx="16" fill="url(#seoBg)"/>
+
+  <!-- Analytics Chart Window -->
+  <g filter="url(#seoShadow)">
+    <rect x="90" y="55" width="420" height="270" rx="14" fill="#0A0F1D" stroke="#334155" stroke-width="1.5"/>
+    <path d="M 90 55 L 510 55 L 510 90 L 90 90 Z" fill="#1E293B"/>
+    <circle cx="112" cy="73" r="5" fill="#EF4444"/>
+    <circle cx="128" cy="73" r="5" fill="#F59E0B"/>
+    <circle cx="144" cy="73" r="5" fill="#10B981"/>
+    <text x="180" y="77" font-family="sans-serif" font-weight="bold" font-size="12" fill="#E2E8F0">SEO Growth &amp; Organic Ranking</text>
+
+    <!-- Growth Graph Bars -->
+    <rect x="130" y="220" width="35" height="70" rx="6" fill="#1E293B"/>
+    <rect x="180" y="190" width="35" height="100" rx="6" fill="#1E293B"/>
+    <rect x="230" y="160" width="35" height="130" rx="6" fill="#3B82F6"/>
+    <rect x="280" y="130" width="35" height="160" rx="6" fill="#8B5CF6"/>
+    <rect x="330" y="105" width="35" height="185" rx="6" fill="url(#chartBarGrad)"/>
+
+    <!-- Upward Trend Line Arrow -->
+    <path d="M 140 210 L 195 180 L 245 150 L 295 120 L 350 95" stroke="#34D399" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <circle cx="350" cy="95" r="5" fill="#34D399"/>
+  </g>
+
+  <!-- Floating Badge: Top 1 Rank -->
+  <g filter="url(#seoShadow)" transform="translate(390, 160)">
+    <rect width="130" height="90" rx="14" fill="#1E293B" stroke="#10B981" stroke-width="1.5"/>
+    <text x="20" y="32" font-family="sans-serif" font-size="10" fill="#94A3B8">Google Ranking</text>
+    <text x="20" y="62" font-family="sans-serif" font-weight="900" font-size="28" fill="#34D399">#1 Page</text>
+  </g>
+</svg>

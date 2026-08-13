@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" fill="none">
+  <defs>
+    <linearGradient id="dsBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A1128"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="dsGradBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <filter id="dsShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="15" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="400" rx="16" fill="url(#dsBg)"/>
+
+  <!-- Component Library Blocks Layout -->
+  <!-- Top Bar: Component Tokens -->
+  <g filter="url(#dsShadow)" transform="translate(80, 50)">
+    <rect width="440" height="60" rx="12" fill="#1E293B" stroke="#334155" stroke-width="1.5"/>
+    <rect x="20" y="18" width="80" height="24" rx="6" fill="#3B82F6"/>
+    <rect x="110" y="18" width="80" height="24" rx="6" fill="#10B981"/>
+    <rect x="200" y="18" width="80" height="24" rx="6" fill="#F59E0B"/>
+    <rect x="290" y="18" width="80" height="24" rx="6" fill="#EF4444"/>
+    <rect x="380" y="18" width="40" height="24" rx="6" fill="#64748B"/>
+  </g>
+
+  <!-- Left Card: Form Controls & Inputs Component -->
+  <g filter="url(#dsShadow)" transform="translate(80, 130)">
+    <rect width="210" height="210" rx="14" fill="#1E293B" stroke="#334155" stroke-width="1.5"/>
+    <text x="20" y="32" font-family="sans-serif" font-weight="bold" font-size="13" fill="#FFFFFF">Form &amp; Input Tokens</text>
+    
+    <!-- Input Box 1 -->
+    <rect x="20" y="48" width="170" height="32" rx="8" fill="#0F172A" stroke="#3B82F6" stroke-width="1.5"/>
+    <rect x="32" y="60" width="60" height="8" rx="4" fill="#60A5FA"/>
+    <line x1="96" y1="56" x2="96" y2="72" stroke="#60A5FA" stroke-width="2"/>
+
+    <!-- Input Box 2 with Switch Toggle -->
+    <rect x="20" y="90" width="170" height="32" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+    <rect x="32" y="102" width="75" height="8" rx="4" fill="#64748B"/>
+    <rect x="150" y="98" width="28" height="16" rx="8" fill="#10B981"/>
+    <circle cx="168" cy="106" r="6" fill="#FFFFFF"/>
+
+    <!-- Radio / Checkbox rows -->
+    <circle cx="28" cy="144" r="8" fill="#3B82F6"/>
+    <circle cx="28" cy="144" r="3" fill="#FFFFFF"/>
+    <rect x="44" y="140" width="80" height="8" rx="4" fill="#94A3B8"/>
+
+    <!-- Action Button inside component -->
+    <rect x="20" y="165" width="170" height="30" rx="8" fill="url(#dsGradBlue)"/>
+    <rect x="65" y="176" width="80" height="8" rx="4" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Right Card: Interactive Card Component -->
+  <g filter="url(#dsShadow)" transform="translate(310, 130)">
+    <rect width="210" height="210" rx="14" fill="#1E293B" stroke="#334155" stroke-width="1.5"/>
+    <text x="20" y="32" font-family="sans-serif" font-weight="bold" font-size="13" fill="#FFFFFF">Modal &amp; Card Specs</text>
+    
+    <!-- Inner Card Preview -->
+    <rect x="20" y="48" width="170" height="142" rx="10" fill="#0F172A" stroke="#475569" stroke-width="1"/>
+    <rect x="32" y="60" width="146" height="45" rx="6" fill="#334155"/>
+    <circle cx="50" cy="82" r="14" fill="#3B82F6"/>
+    <rect x="32" y="115" width="100" height="8" rx="4" fill="#FFFFFF"/>
+    <rect x="32" y="130" width="130" height="6" rx="3" fill="#64748B"/>
+    <rect x="32" y="142" width="90" height="6" rx="3" fill="#64748B"/>
+    <rect x="32" y="158" width="60" height="18" rx="6" fill="#3B82F6"/>
+    <rect x="100" y="158" width="60" height="18" rx="6" fill="#334155"/>
+  </g>
+</svg>

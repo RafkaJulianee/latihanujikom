@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" fill="none">
+  <defs>
+    <linearGradient id="artUxBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E1B4B"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" rx="16" fill="url(#artUxBg)"/>
+  <rect x="230" y="70" width="140" height="230" rx="22" fill="#1E293B" stroke="#60A5FA" stroke-width="2"/>
+  <rect x="240" y="80" width="120" height="210" rx="16" fill="#0A0F1D"/>
+  <rect x="255" y="105" width="90" height="45" rx="8" fill="#3B82F6"/>
+  <circle cx="300" cy="180" r="16" fill="#10B981"/>
+  <rect x="260" y="210" width="80" height="8" rx="4" fill="#64748B"/>
+  <rect x="260" y="225" width="55" height="8" rx="4" fill="#64748B"/>
+  <text x="300" y="350" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="20" fill="#FFFFFF">Mobile UX &amp; Micro-interactions</text>
+</svg>

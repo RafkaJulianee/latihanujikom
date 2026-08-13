@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" fill="none">
+  <defs>
+    <linearGradient id="art3dBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#312E81"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EC4899"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" rx="16" fill="url(#art3dBg)"/>
+  <circle cx="300" cy="180" r="110" fill="url(#glowGrad)" opacity="0.85"/>
+  <polygon points="300,90 370,140 300,190 230,140" fill="#F472B6"/>
+  <polygon points="230,140 300,190 300,270 230,220" fill="#DB2777"/>
+  <polygon points="300,190 370,140 370,220 300,270" fill="#BE185D"/>
+  <text x="300" y="340" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="20" fill="#FFFFFF">3D Web Design &amp; WebGL Trends</text>
+</svg>
