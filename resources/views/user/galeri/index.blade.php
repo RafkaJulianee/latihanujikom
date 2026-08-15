@@ -1,15 +1,15 @@
 @extends('user.layouts.app')
 
-@section('title', 'Galeri Kegiatan & Portofolio - ZICODE')
+@section('title', 'Galeri Kegiatan & Portofolio - PT Solusi Koneksi')
 
 @section('content')
 {{-- Header Banner --}}
 <section class="bg-dark-navy text-white py-5">
     <div class="container py-3 text-center">
-        <span class="badge bg-primary-blue text-white rounded-pill px-3 py-1 mb-3 small font-weight-bold">GALERI KEGIATAN</span>
-        <h1 class="display-5 fw-bold mb-3">Galeri &amp; Dokumentasi ZICODE</h1>
+        <span class="badge bg-primary-blue text-white rounded-pill px-3 py-1 mb-3 small font-weight-bold">DOKUMENTASI KARYA</span>
+        <h1 class="display-5 fw-bold mb-3">Karya &amp; Dokumentasi PT Solusi Koneksi</h1>
         <p class="text-white-50 max-w-600 mx-auto fs-6">
-            Kumpulan dokumentasi kegiatan, hasil karya portofolio, dan aktivitas pengembangan teknologi terbaru dari ZICODE.
+            Kumpulan dokumentasi proyek, hasil karya portofolio, dan aktivitas pengembangan teknologi bersama mitra kami.
         </p>
     </div>
 </section>

@@ -1,6 +1,6 @@
 @extends('user.layouts.app')
 
-@section('title', $produk->nama_produk . ' - ZICODE')
+@section('title', $produk->nama_produk . ' - PT Solusi Koneksi')
 
 @section('content')
 {{-- Page Header / Breadcrumb --}}
@@ -39,7 +39,7 @@
                     <ul class="list-unstyled mb-0 d-flex flex-column gap-2 text-dark small">
                         <li><i class="fa-solid fa-check text-primary-blue me-2"></i> Solusi disesuaikan secara khusus dengan skala bisnis Anda</li>
                         <li><i class="fa-solid fa-check text-primary-blue me-2"></i> Standar performa tinggi &amp; jaminan keamanan terintegrasi</li>
-                        <li><i class="fa-solid fa-check text-primary-blue me-2"></i> Dukungan konsultasi &amp; respon cepat dari tim ZICODE</li>
+                        <li><i class="fa-solid fa-check text-primary-blue me-2"></i> Dukungan konsultasi &amp; respon cepat dari tim PT Solusi Koneksi</li>
                     </ul>
                 </div>
 

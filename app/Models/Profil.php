@@ -55,6 +55,12 @@ class Profil extends Model
         'alamat',
         'telepon',
         'email',
+        'stat1_angka',
+        'stat1_label',
+        'stat2_angka',
+        'stat2_label',
+        'stat3_angka',
+        'stat3_label',
         'logo',
     ];
 
@@ -66,7 +72,7 @@ class Profil extends Model
     public function getLogoUrlAttribute(): string
     {
         if (!$this->logo) {
-            return asset('img/logo-zicode.png');
+            return asset('img/logo.png');
         }
 
         if (file_exists(public_path('img/' . $this->logo))) {
@@ -79,6 +85,10 @@ class Profil extends Model
 
         if (file_exists(public_path('images/' . $this->logo))) {
             return asset('images/' . $this->logo);
+        }
+
+        if (file_exists(public_path($this->logo))) {
+            return asset($this->logo);
         }
 
         return asset('img/' . $this->logo);

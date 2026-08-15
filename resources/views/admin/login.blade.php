@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Masuk Admin - {{ $profil->nama_perusahaan ?? 'ZICODE' }}</title>
+    <title>Masuk Admin - {{ $profil->nama_perusahaan ?? 'PT Solusi Koneksi' }}</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{ asset('img/logo.png') }}?v={{ time() }}" type="image/png">
+    <link rel="icon" href="{{ asset('img/logo.png') }}?v={{ time() }}" type="image/png">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -301,8 +305,11 @@
         {{-- Right Side: Form Panel --}}
         <div class="login-form-side">
             <div class="login-form-wrapper">
+                <div class="mb-3">
+                    <img src="{{ $profil->logo_url ?? asset('img/logo.png') }}" alt="{{ $profil->nama_perusahaan ?? 'PT Solusi Koneksi' }}" style="height: 64px; width: auto; max-width: 220px; object-fit: contain;">
+                </div>
                 <h2 class="form-heading-title">
-                    Welcome Back to {{ $profil->nama_perusahaan ?? 'ZICODE' }}!
+                    Welcome Back to {{ $profil->nama_perusahaan ?? 'PT Solusi Koneksi' }}!
                 </h2>
                 <p class="form-heading-sub">
                     Sign in your account
@@ -310,16 +317,26 @@
 
                 {{-- Alert Feedback --}}
                 @if($errors->any())
-                    <div class="alert alert-danger rounded-3 p-3 mb-4 border-0 bg-danger bg-opacity-10 text-danger fw-semibold small d-flex align-items-center gap-2">
-                        <i class="fa-solid fa-circle-exclamation fs-5 flex-shrink-0"></i>
-                        <div>{{ $errors->first() }}</div>
+                    <div class="admin-alert-card alert-danger mb-4">
+                        <div class="admin-alert-icon">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                        </div>
+                        <div class="admin-alert-content">
+                            <div class="admin-alert-title">Gagal Masuk</div>
+                            <p class="admin-alert-desc">{{ $errors->first() }}</p>
+                        </div>
                     </div>
                 @endif
 
                 @if(session('success'))
-                    <div class="alert alert-success rounded-3 p-3 mb-4 border-0 bg-success bg-opacity-10 text-success fw-semibold small d-flex align-items-center gap-2">
-                        <i class="fa-solid fa-circle-check fs-5 flex-shrink-0"></i>
-                        <div>{{ session('success') }}</div>
+                    <div class="admin-alert-card alert-success mb-4">
+                        <div class="admin-alert-icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <div class="admin-alert-content">
+                            <div class="admin-alert-title">Berhasil</div>
+                            <p class="admin-alert-desc">{{ session('success') }}</p>
+                        </div>
                     </div>
                 @endif
 

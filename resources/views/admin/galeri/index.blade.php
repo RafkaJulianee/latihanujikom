@@ -5,13 +5,16 @@
 
 @section('content')
 <div class="admin-card p-4">
-    <div class="d-flex justify-content-between align-items-center mb-4">
+    <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-3 mb-4 pb-3 border-bottom">
         <div>
-            <h6 class="fw-bold text-dark-navy mb-1 text-uppercase" style="letter-spacing: 0.5px;">Daftar Galeri & Portofolio</h6>
-            <small class="text-muted">Total: {{ $galeris->total() }} item karya</small>
+            <div class="d-flex align-items-center gap-2 mb-1">
+                <h6 class="fw-bold text-dark-navy mb-0 text-uppercase" style="letter-spacing: 0.5px;">Daftar Galeri &amp; Portofolio</h6>
+                <span class="badge bg-light text-success border border-success-subtle rounded-pill px-2.5 py-1 small">{{ $galeris->total() }} Total</span>
+            </div>
+            <small class="text-muted">Kelola dokumentasi karya dan aktivitas proyek perusahaan</small>
         </div>
-        <a href="{{ route('admin.galeri.create') }}" class="btn btn-primary-blue btn-sm px-3 fw-bold">
-            <i class="fa-solid fa-plus me-1"></i> Tambah Karya Baru
+        <a href="{{ route('admin.galeri.create') }}" class="btn btn-primary-blue btn-sm px-3.5 py-2 fw-semibold rounded-3 d-inline-flex align-items-center gap-1.5 shadow-sm">
+            <i class="fa-solid fa-plus"></i> Tambah Karya Baru
         </a>
     </div>
 
@@ -19,8 +22,8 @@
         <table class="table admin-table align-middle">
             <thead>
                 <tr>
-                    <th width="70">No</th>
-                    <th width="100">Pratinjau</th>
+                    <th width="60" class="text-center">No</th>
+                    <th width="90">Foto</th>
                     <th>Judul Karya</th>
                     <th>Keterangan / Deskripsi</th>
                     <th width="160" class="text-center">Aksi</th>
@@ -29,23 +32,23 @@
             <tbody>
                 @forelse($galeris as $index => $galeri)
                     <tr>
-                        <td class="fw-bold text-muted">{{ $galeris->firstItem() + $index }}</td>
+                        <td class="text-center fw-semibold text-muted small">{{ $galeris->firstItem() + $index }}</td>
                         <td>
-                            <img src="{{ $galeri->gambar_url }}" alt="{{ $galeri->judul }}" class="rounded-3 border" width="56" height="56" style="object-fit: cover;">
+                            <img src="{{ $galeri->gambar_url }}" alt="{{ $galeri->judul }}" class="rounded-3 border" width="50" height="50" style="object-fit: cover;">
                         </td>
                         <td>
-                            <span class="fw-bold text-dark-navy">{{ $galeri->judul }}</span>
+                            <span class="fw-semibold text-dark-navy d-block">{{ $galeri->judul }}</span>
                         </td>
-                        <td><span class="small text-muted">{{ Str::limit($galeri->keterangan, 80) }}</span></td>
+                        <td><span class="small text-muted">{{ Str::limit($galeri->keterangan, 85) }}</span></td>
                         <td>
                             <div class="d-flex justify-content-center gap-2">
-                                <a href="{{ route('admin.galeri.edit', $galeri->id_galeri) }}" class="btn-action-edit" title="Ubah">
-                                    <i class="fa-solid fa-pen"></i> Ubah
+                                <a href="{{ route('admin.galeri.edit', $galeri->id_galeri) }}" class="btn-action-edit" title="Ubah Karya">
+                                    <i class="fa-solid fa-pen"></i> Edit
                                 </a>
                                 <form action="{{ route('admin.galeri.destroy', $galeri->id_galeri) }}" method="POST" onsubmit="return confirm('Apakah Anda yakin ingin menghapus galeri ini?');">
                                     @csrf
                                     @method('DELETE')
-                                    <button type="submit" class="btn-action-delete" title="Hapus">
+                                    <button type="submit" class="btn-action-delete" title="Hapus Karya">
                                         <i class="fa-solid fa-trash"></i> Hapus
                                     </button>
                                 </form>
@@ -55,8 +58,8 @@
                 @empty
                     <tr>
                         <td colspan="5" class="text-center py-5 text-muted">
-                            <i class="fa-solid fa-images fs-2 mb-2 d-block text-muted opacity-50"></i>
-                            Belum ada item karya diunggah. Silakan klik tombol <strong>Tambah Karya Baru</strong>.
+                            <i class="fa-solid fa-images fs-2 mb-2 d-block text-muted opacity-40"></i>
+                            Belum ada foto karya diunggah. Silakan klik tombol <strong>Tambah Karya Baru</strong>.
                         </td>
                     </tr>
                 @endforelse
@@ -65,7 +68,7 @@
     </div>
 
     @if($galeris->hasPages())
-        <div class="mt-4 pt-3 border-top d-flex justify-content-between align-items-center">
+        <div class="mt-4 pt-3 border-top d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2">
             <small class="text-muted">Menampilkan {{ $galeris->firstItem() }} - {{ $galeris->lastItem() }} dari {{ $galeris->total() }} data</small>
             {{ $galeris->links('pagination::bootstrap-5') }}
         </div>

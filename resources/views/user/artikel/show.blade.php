@@ -1,6 +1,6 @@
 @extends('user.layouts.app')
 
-@section('title', $artikel->judul . ' - ZICODE')
+@section('title', $artikel->judul . ' - PT Solusi Koneksi')
 
 @section('content')
 {{-- Page Header / Breadcrumb --}}
@@ -16,7 +16,7 @@
         <h1 class="h2 fw-bold text-dark-navy mb-2">{{ $artikel->judul }}</h1>
         <div class="d-flex align-items-center gap-3 text-muted small">
             <span><i class="fa-regular fa-calendar text-primary-blue me-1"></i> {{ \Carbon\Carbon::parse($artikel->tanggal)->format('d F Y') }}</span>
-            <span><i class="fa-solid fa-user text-primary-blue me-1"></i> Tim Redaksi ZICODE</span>
+            <span><i class="fa-solid fa-user text-primary-blue me-1"></i> Tim Redaksi PT Solusi Koneksi</span>
         </div>
     </div>
 </section>
@@ -41,7 +41,7 @@
                         <i class="fa-solid fa-arrow-left me-1"></i> Kembali ke Artikel
                     </a>
                     <a href="{{ route('home') }}#kontak" class="btn btn-primary-blue btn-sm">
-                        Hubungi ZICODE <i class="fa-solid fa-envelope ms-1"></i>
+                        Hubungi PT Solusi Koneksi <i class="fa-solid fa-envelope ms-1"></i>
                     </a>
                 </div>
             </div>

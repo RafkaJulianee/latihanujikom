@@ -46,10 +46,16 @@ class ProfilController extends Controller
             'alamat'          => 'required|string',
             'telepon'         => 'required|string|max:20',
             'email'           => 'required|email|max:100',
+            'stat1_angka'     => 'nullable|string|max:50',
+            'stat1_label'     => 'nullable|string|max:100',
+            'stat2_angka'     => 'nullable|string|max:50',
+            'stat2_label'     => 'nullable|string|max:100',
+            'stat3_angka'     => 'nullable|string|max:50',
+            'stat3_label'     => 'nullable|string|max:100',
             'logo'            => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:4096',
         ]);
 
-        $logoPath = $profil ? $profil->logo : 'logo-zicode.png';
+        $logoPath = $profil ? $profil->logo : 'ptsolusikoneksiremovebg.png';
 
         if ($request->hasFile('logo')) {
             // Hapus logo lama jika bukan aset default
@@ -77,10 +83,16 @@ class ProfilController extends Controller
                 'alamat'          => $request->alamat,
                 'telepon'         => $request->telepon,
                 'email'           => $request->email,
+                'stat1_angka'     => $request->stat1_angka ?? '150+',
+                'stat1_label'     => $request->stat1_label ?? 'Proyek Selesai',
+                'stat2_angka'     => $request->stat2_angka ?? '99%',
+                'stat2_label'     => $request->stat2_label ?? 'Kepuasan Klien',
+                'stat3_angka'     => $request->stat3_angka ?? '24/7',
+                'stat3_label'     => $request->stat3_label ?? 'Dukungan Teknis',
                 'logo'            => $logoPath,
             ]
         );
 
-        return redirect()->route('profil.edit')->with('success', 'Profil perusahaan berhasil diperbarui!');
+        return redirect()->route('profil.edit')->with('success', 'Profil dan statistik pencapaian berhasil diperbarui!');
     }
 }

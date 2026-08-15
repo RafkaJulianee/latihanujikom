@@ -1,15 +1,15 @@
 @extends('user.layouts.app')
 
-@section('title', 'Hubungi Kami - ZICODE')
+@section('title', 'Hubungi Kami - PT Solusi Koneksi')
 
 @section('content')
 {{-- Header Banner --}}
 <section class="bg-dark-navy text-white py-5">
     <div class="container py-3 text-center">
         <span class="badge bg-primary-blue text-white rounded-pill px-3 py-1 mb-3 small font-weight-bold">KONTAK KAMI</span>
-        <h1 class="display-5 fw-bold mb-3">Hubungi Tim ZICODE</h1>
+        <h1 class="display-5 fw-bold mb-3">Hubungi Tim PT Solusi Koneksi</h1>
         <p class="text-white-50 max-w-600 mx-auto fs-6">
-            Siap memulai proyek baru atau ingin berkonsultasi seputar solusi digital bisnis Anda? Hubungi tim ahli ZICODE.
+            Siap memulai proyek baru atau ingin berkonsultasi seputar solusi digital bisnis Anda? Hubungi tim ahli PT Solusi Koneksi.
         </p>
     </div>
 </section>
@@ -46,7 +46,7 @@
                         </div>
                         <div>
                             <h6 class="fw-bold mb-1 text-white">Email Resmi</h6>
-                            <p class="text-white-50 small mb-0">{{ $profil->email ?? 'contact@zicode.com' }}</p>
+                            <p class="text-white-50 small mb-0">{{ $profil->email ?? 'contact@solusikoneksi.com' }}</p>
                         </div>
                     </div>
 
@@ -62,9 +62,7 @@
 
                     <hr class="border-secondary opacity-25 my-4">
 
-                    <h6 class="fw-bold text-white mb-2">Jam Operasional</h6>
-                    <p class="text-white-50 small mb-0">Senin - Jumat: 09:00 - 18:00 WIB<br>Sabtu - Minggu: Tutup</p>
-                </div>
+                    
             </div>
 
             {{-- Message Form Column --}}

@@ -33,22 +33,22 @@ class DatabaseSeeder extends Seeder
             [
                 'nama'     => 'Chief Creative Admin',
                 'password' => Hash::make('admin123'),
-                'email'    => 'admin@zicode.com',
+                'email'    => 'admin@solusikoneksi.com',
             ]
         );
 
-        // 2. Profil & Identitas Perusahaan ZICODE
+        // 2. Profil & Identitas Perusahaan PT Solusi Koneksi
         Profil::updateOrCreate(
             ['id_profil' => 1],
             [
-                'nama_perusahaan' => 'ZICODE DIGITAL AGENCY',
-                'tentang'         => 'ZICODE adalah agensi teknologi digital profesional yang mengkhususkan diri dalam jasa pembuatan website, pengembangan aplikasi mobile (Android & iOS), perancangan UI/UX design antarmuka modern, serta solusi software enterprise untuk mempercepat transformasi digital bisnis Anda.',
+                'nama_perusahaan' => 'PT Solusi Koneksi',
+                'tentang'         => 'PT Solusi Koneksi adalah agensi teknologi digital profesional yang mengkhususkan diri dalam jasa pembuatan website, pengembangan aplikasi mobile (Android & iOS), perancangan UI/UX design antarmuka modern, serta solusi software enterprise untuk mempercepat transformasi digital bisnis Anda.',
                 'visi'            => 'Menjadi penyedia jasa pembuatan website, aplikasi mobile, dan solusi digital terdepan di Indonesia yang terpercaya dalam menghadirkan inovasi teknologi berkinerja tinggi, aman, dan berestetika modern.',
                 'misi'            => "1. Menyediakan layanan jasa pembuatan website & aplikasi mobile berstandar profesional dengan performa cepat, responsif, dan aman.\n2. Merancang antarmuka UI/UX yang intuitif untuk meningkatkan pengalaman pengguna serta konversi bisnis.\n3. Memberikan pendampingan teknis, pemeliharaan sistem, dan solusi digital berkelanjutan bagi setiap mitra bisnis.",
                 'alamat'          => 'Jl. Jendral Sudirman No. 88, Central Business District, Jakarta',
                 'telepon'         => '+62 812-3456-7890',
-                'email'           => 'contact@zicode.com',
-                'logo'            => 'logo-zicode.png',
+                'email'           => 'contact@solusikoneksi.com',
+                'logo'            => 'ptsolusikoneksiremovebg.png',
             ]
         );
 
