@@ -44,7 +44,7 @@
                 </div>
 
                 <div class="d-flex flex-wrap gap-3">
-                    <a href="{{ route('home') }}#kontak" class="btn btn-primary-blue py-2 px-4">
+                    <a href="https://wa.me/6285871444639?text=Halo%20PT%20Solusi%20Koneksi,%20saya%20ingin%20konsultasi%20mengenai%20layanan%20{{ urlencode($produk->nama_produk) }}." target="_blank" class="btn btn-primary-blue py-2 px-4">
                         Konsultasi Sekarang <i class="fa-solid fa-arrow-right ms-1"></i>
                     </a>
                     <a href="{{ route('user.produk.index') }}" class="btn btn-outline-navy py-2 px-4">

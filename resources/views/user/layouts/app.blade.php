@@ -64,7 +64,7 @@
 
                 <!-- CTA Action Button -->
                 <div class="d-none d-lg-flex align-items-center gap-2">
-                    <a href="{{ route('home') }}#kontak" class="btn btn-primary-blue">Konsultasi Gratis</a>
+                    <a href="https://wa.me/6285871444639?text=Halo%20PT%20Solusi%20Koneksi,%20saya%20ingin%20konsultasi%20layanan%20digital." target="_blank" class="btn btn-primary-blue">Konsultasi Gratis</a>
                 </div>
             </nav>
         </div>

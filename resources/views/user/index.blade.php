@@ -21,7 +21,7 @@
                 </p>
 
                 <div class="d-flex flex-wrap align-items-center gap-3">
-                    <a href="#kontak" class="btn btn-primary-blue px-4 py-2">
+                    <a href="https://wa.me/6285871444639?text=Halo%20PT%20Solusi%20Koneksi,%20saya%20ingin%20konsultasi%20mengenai%20pembuatan%20website%20dan%20aplikasi." target="_blank" class="btn btn-primary-blue px-4 py-2">
                         Konsultasi Gratis <i class="fa-solid fa-arrow-right ms-2"></i>
                     </a>
                     <a href="#produk" class="btn btn-outline-navy px-4 py-2">
